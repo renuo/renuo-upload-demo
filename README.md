@@ -30,6 +30,8 @@ npm start
 npm run compile
 ```
 
+No auto deployment setup at the moment, just copy manually quick the dist folder into th gh-pages branch and push it. 
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at 
