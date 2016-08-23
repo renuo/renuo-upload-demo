@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+bower_components
+node_modules
+tmp
+typings/*
+!typings/custom/
+!typings/all.d.ts

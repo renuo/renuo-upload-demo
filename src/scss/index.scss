@@ -1,0 +1,37 @@
+.hidden-by-default {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.result {
+  margin-top: 50px;
+
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin: 20px 0 10px;
+  }
+
+  a + a {
+    margin-top: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .image-preview-wrapper {
+    border: 2px solid $preview-image-border;
+    min-height: 420px;
+  }
+}
