@@ -45,6 +45,7 @@ class ImageManipulationListener {
 
   clickFilterCallback = (key:string, value:string):Function => {
     const callback = (event:JQueryEventObject) => {
+      event.preventDefault();
       if (this.toggleActive(<HTMLLinkElement> event.target)) {
         this.options.setFilter(key, value);
       } else {
