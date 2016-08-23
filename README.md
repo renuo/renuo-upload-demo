@@ -1,6 +1,6 @@
 # Renuo Upload & Image Managing Example
 
-## Demo is located in the dist folder, just open the index file in a browser.
+## Demo is located in the dist folder, but is also avaiable online: https://renuo.github.io/renuo-upload-demo
 
 # Development
 
