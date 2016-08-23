@@ -13,13 +13,27 @@ class ImageManipulationsOptions {
   public filters:IImageManipulationsFilters;
 
   constructor() {
-    this.filters = <IImageManipulationsFilters> {};
+    this.filters = {
+      brightness: undefined,
+      contrast: undefined,
+      noise: undefined,
+      rgb: undefined,
+      round_corner: undefined,
+      watermark: undefined
+    };
+  }
+
+  public setFilter(filter:string, value: string):void {
+    for (let filterKey in this.filters) {
+      if (this.filters.hasOwnProperty(filterKey) && filterKey === filter) {
+        this.filters[filter] = value;
+      }
+    }
   }
 
   public join():string {
     let joinedOptions:string = '';
     let joinedFilters:string = '';
-
 
     for (let filterKey in this.filters) {
       if (this.filters.hasOwnProperty(filterKey) && typeof this.filters[filterKey] !== 'undefined') {
