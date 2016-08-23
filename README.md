@@ -45,4 +45,4 @@ or contact [info@renuo.ch](mailto:info@renuo.ch).
 
 ## MIT License
 
-Coypright 2015 - 2016 [Renuo](https://renuo.ch). See [LICENSE](LICENSE) file.
+Coypright 2016 [Renuo AG](https://renuo.ch). See [LICENSE](LICENSE) file.
