@@ -71,7 +71,7 @@ gulp.task 'scsslint', ->
 gulp.task 'ts', ->
   del ["#{paths.finalDest()}*.js", "#{paths.finalDest()}*.js.map"]
 
-  gulp.src paths.ts.application
+  gulp.src paths.ts.all
   .pipe sourcemaps.init()
   .pipe ts tsproject
   .pipe babel presets: ['es2015']
