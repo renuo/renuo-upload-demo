@@ -32,7 +32,8 @@
     "gulp-uglify": "^1.5.4",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1",
-    "tslint": "^3.14.0"
+    "tslint": "^3.14.0",
+    "vinyl-paths": "^2.1.0"
   },
   "engines": {
     "node": "6"
@@ -41,7 +42,8 @@
   "scripts": {
     "postinstall": "npm i gulp-cli typings -g && typings install && grep 'renuo-upload-demo.dev' /etc/hosts || echo '127.0.0.1 renuo-upload-demo.dev' | sudo tee -a /etc/hosts",
     "start": "gulp compile && gulp default",
-    "compile": "gulp compile --type production",
+    "build": "gulp compile --type production",
+    "deploy": "npm run build && BRANCH='gh-pages' ruby deploy.rb",
     "test": "echo 'Error: no test specified' && exit 1",
     "lint": "gulp lint"
   }

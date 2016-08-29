@@ -17,6 +17,7 @@ ts = require 'gulp-typescript'
 tslint = require 'gulp-tslint'
 tsproject = ts.createProject 'tsconfig.json'
 uglify = require 'gulp-uglify'
+vinylpaths = require('vinyl-paths')
 webserver = require 'gulp-webserver'
 
 helpers =
@@ -44,8 +45,7 @@ gulp.task 'html', helpers.do('production', ['scss', 'ts'], []), ->
   .pipe helpers.do 'production', revreplace manifest: gulp.src('./dist/rev-js.json')
   .pipe helpers.do 'production', htmlmin collapseInlineTagWhitespace: true, collapseWhitespace: true, removeComments: true
   .pipe gulp.dest paths.finalDest
-
-  helpers.do 'production', del ['./dist/rev-css.json', './dist/rev-js.json']
+  .pipe helpers.do 'production', vinylpaths -> del ['./dist/rev-css.json', './dist/rev-js.json']
 
 gulp.task 'scss' , ->
   del ["#{paths.finalDest()}*.css", "#{paths.finalDest()}*.css.map"]
