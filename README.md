@@ -4,9 +4,10 @@
 
 # Development
 
-## Requirements 
+## Requirements
 
-* [nvm](https://github.com/creationix/nvm)
+* [Node](https://nodejs.org) (install it with [nvm](https://github.com/creationix/nvm))
+* [Ruby](https://www.ruby-lang.org/) (only for **deployment**, install it with [rbenv](https://github.com/rbenv/rbenv))
 
 ## Setup
 
@@ -27,15 +28,23 @@ npm start
 ## Release
 
 ```
-npm run compile
+npm run build
 ```
 
-No auto deployment setup at the moment, just copy manually quick the dist folder into th gh-pages branch and push it. 
+## Deployment
+
+**Auto deployment is setup.**
+
+Manual deployment:
+
+```
+npm run deploy
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at 
-[https://github.com/renuo/renuo-upload-demo](https://github.com/renuo/renuo-upload-demo). 
+Bug reports and pull requests are welcome on GitHub at
+[https://github.com/renuo/renuo-upload-demo](https://github.com/renuo/renuo-upload-demo).
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to
 the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
