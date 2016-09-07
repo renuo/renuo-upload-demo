@@ -8,9 +8,9 @@
   <!--<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css' integrity='sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY' crossorigin='anonymous'>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/dropzone/4.3.0/dropzone.min.css' integrity='sha256-e47xOkXs1JXFbjjpoRr1/LhVcqSzRmGmPqsrUQeVs+g=' crossorigin='anonymous'>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/dropzone/4.3.0/basic.min.css' integrity='sha256-RvDmZ4ZtPtrWmZdibCa80jCE32m21xuR5SuW6zfJaW4=' crossorigin='anonymous'>
+<link rel='stylesheet' href='css/bootstrap.min.css'>
 <!-- build:css -->
 <link rel='stylesheet' href='application.css' type='text/css'>
 <!-- endbuild -->
@@ -20,7 +20,7 @@
     Renuo Upload
   </div>
 
-  <div class='row top-buffer'>
+  <div class='row'>
     <div class='col-xs-12'>
       <div class='renuo-upload dz-clickable' data-apikey='973af11c9bca956b21b3ba9f61e0fac6dda245240bbaefb170' data-signingurl='https://renuo-upload-signing-master.renuoapp.ch/generate_policy'>
         <div class='dz-default dz-message'>
@@ -31,22 +31,22 @@
   </div>
   <div class='result row hidden-by-default'>
     <div class='col-md-12'>
-      <div class='page-header page-text'>Preview</div>
+      <div class='page-text'>Preview</div>
       <div class='image-preview-wrapper'>
         <img id='image-preview'>
       </div>
     </div>
   </div>
   <div class='result row hidden-by-default'>
-    <div class='col-md-12'>
-      <a href='#' id='crop-image-preview' class='btn btn-primary' role='button'>Crop image (300x300)</a>
-      <a href='#' id='brightness-image-preview' class='btn btn-primary' role='button'>Brightness (-40%)</a>
-      <a href='#' id='contrast-image-preview' class='btn btn-primary' role='button'>Contrast (40)</a>
-      <a href='#' id='noise-image-preview' class='btn btn-primary' role='button'>Noise (200)</a>
-      <a href='#' id='rgb-image-preview' class='btn btn-primary' role='button'>RGB (20,-20,40)</a>
-      <a href='#' id='round-corner-image-preview' class='btn btn-primary' role='button'>Rounded Corners</a>
-      <a href='#' id='watermark-image-preview' class='btn btn-primary' role='button'>Watermark (Renuo Logo)</a>
-    </div>
+    <ul class='nav nav-pills filter-buttons'>
+      <li><a href='#' id='crop-image-preview' class='btn btn-primary' role='button'>Crop Image</a></li>
+      <li><a href='#' id='brightness-image-preview' class='btn btn-primary' role='button'>Brightness</a></li>
+      <li><a href='#' id='contrast-image-preview' class='btn btn-primary' role='button'>Contrast</a></li>
+      <li><a href='#' id='noise-image-preview' class='btn btn-primary' role='button'>Noise</a></li>
+      <li><a href='#' id='rgb-image-preview' class='btn btn-primary' role='button'>Purple Tone</a></li>
+      <li><a href='#' id='round-corner-image-preview' class='btn btn-primary' role='button'>Round Corners</a></li>
+      <li><a href='#' id='watermark-image-preview' class='btn btn-primary' role='button'>Watermark</a></li>
+    </ul>
   </div>
 </div>
 
