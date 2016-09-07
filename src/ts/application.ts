@@ -7,3 +7,10 @@ $(() => {
   new ImageManipulationListener();
 });
 
+
+window.scroll = function () {
+  $('html, body').animate({
+    'scrollTop': $('#logo').offset().top
+  }, 1000);
+};
+
