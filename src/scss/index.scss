@@ -68,6 +68,10 @@ img {
     background-color: $darkblue-color;
     border: solid black 1px;
 
+    &.active{
+      background-color: darkblue;
+    }
+
     &:hover{
       background-color: $color-light-blue2;
       border-color: $darkblue-color;
