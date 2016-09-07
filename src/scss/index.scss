@@ -3,14 +3,6 @@ body {
   background-color: #4B93C2;
 }
 
-.renuo-o {
-  float: right;
-  pointer-events: none;
-  width: 80px;
-  margin-top: -19px;
-  margin-right: -20px;
-}
-
 h1 {
   padding-bottom: 20px;
 }
@@ -22,11 +14,6 @@ h1 {
   }
 }
 
-.info-text {
-  color: #000000;
-  margin-top: 40px !important;
-}
-
 .logo {
   padding: 10px;
   border-bottom-right-radius: 30px;
@@ -34,6 +21,14 @@ h1 {
   background-color: #E4F4FF;
   top: 0;
   left: 0;
+}
+
+.renuo-o {
+  float: right;
+  pointer-events: none;
+  width: 80px;
+  margin-top: -19px;
+  margin-right: -20px;
 }
 
 .hidden-by-default {
@@ -65,6 +60,15 @@ img {
   }
 }
 
+.container {
+  text-align: center;
+}
+
+.info-text {
+  color: #000000;
+  margin-top: 40px !important;
+}
+
 .container_info-top {
   padding-top: 5vh;
   background-color: #E4F4FF;
@@ -79,6 +83,12 @@ img {
   min-height: 90vh;
 }
 
+.footer-top {
+  padding-top: 5vh;
+  background-color: #000000;
+  min-height: 5vh;
+}
+
 .footer {
   margin: auto;
   background-color: #000000;
@@ -87,16 +97,6 @@ img {
   p {
     font-family: 'Noto Serif', serif;
   }
-}
-
-.footer-top {
-  padding-top: 5vh;
-  background-color: #000000;
-  min-height: 5vh;
-}
-
-.container {
-  text-align: center;
 }
 
 .back {
