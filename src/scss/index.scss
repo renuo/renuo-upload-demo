@@ -39,32 +39,33 @@ img {
   }
 
   .image-preview-wrapper {
+    background-color: #ffffff;
+    border-radius: 20px;
     min-height: 420px;
     width: 100%;
-    border-radius: 20px;
-    background-color: #ffffff;
   }
 }
 
 .dropzone {
-  color: #000000;
   background-color: rgba(256, 256, 256, 1);
   border-radius: 5px;
+  color: #000000;
 }
 
 .container {
+  background-color: #ffffff;
+  border-radius: 3px;
   margin-top: 15px;
   margin-bottom: 15px;
-  background-color: #ffffff;
   min-height: 95vh;
   padding: 25px;
   padding-top: 0;
 }
 
 .page-header {
+  letter-spacing: 2px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 72px;
-  letter-spacing: 2px;
 }
 
 .page-text {
@@ -72,12 +73,18 @@ img {
   font-size: 48px;
 }
 
-.filter-buttons {
-  width: 100%;
-  margin: 0 auto;
+.center-filter-buttons {
+  text-align: center;
 }
 
-.filter-container{
-  width: 100%;
-  margin: 0 auto;
+.center-filter-buttons ul.nav-pills {
+  display: inline-block;
+}
+
+.center-filter-buttons li {
+  display: inline;
+}
+
+.center-filter-buttons a {
+  float: left;
 }
