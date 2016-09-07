@@ -1,59 +1,61 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
 <head>
   <title>Renuo Upload Demo</title>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <meta content="utf-8" http-equiv="encoding">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+  <meta content='utf-8' http-equiv='encoding'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <!--<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/dropzone/4.3.0/dropzone.min.css" integrity="sha256-e47xOkXs1JXFbjjpoRr1/LhVcqSzRmGmPqsrUQeVs+g=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/dropzone/4.3.0/basic.min.css" integrity="sha256-RvDmZ4ZtPtrWmZdibCa80jCE32m21xuR5SuW6zfJaW4=" crossorigin="anonymous">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css' integrity='sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY' crossorigin='anonymous'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/dropzone/4.3.0/dropzone.min.css' integrity='sha256-e47xOkXs1JXFbjjpoRr1/LhVcqSzRmGmPqsrUQeVs+g=' crossorigin='anonymous'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/dropzone/4.3.0/basic.min.css' integrity='sha256-RvDmZ4ZtPtrWmZdibCa80jCE32m21xuR5SuW6zfJaW4=' crossorigin='anonymous'>
 <!-- build:css -->
-<link rel="stylesheet" href="application.css" type="text/css">
+<link rel='stylesheet' href='application.css' type='text/css'>
 <!-- endbuild -->
 
-<div class="container">
+<div class='container'>
   <h1>Renuo Upload &amp; Image Managing Example</h1>
 
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="renuo-upload dz-clickable" data-apikey="973af11c9bca956b21b3ba9f61e0fac6dda245240bbaefb170" data-signingurl="https://renuo-upload-signing-master.renuoapp.ch/generate_policy">
-        <div class="dz-default dz-message">
+  <div class='row top-buffer'>
+    <div class='col-xs-12'>
+      <div class='renuo-upload dz-clickable' data-apikey='973af11c9bca956b21b3ba9f61e0fac6dda245240bbaefb170' data-signingurl='https://renuo-upload-signing-master.renuoapp.ch/generate_policy'>
+        <div class='dz-default dz-message'>
           <span>Drop an image or a file into this area or just click into it.</span>
         </div>
       </div>
     </div>
   </div>
-  <div class="result row hidden-by-default">
-    <div class="col-md-3">
+  <div class='result row hidden-by-default'>
+    <div class='col-md-12'>
+      <h2>Preview manipulated Image</h2>
+      <div class='image-preview-wrapper'>
+        <img id='image-preview'>
+      </div>
+    </div>
+  </div>
+  <div class='result row hidden-by-default'>
+    <div class='col-md-12'>
       <h2>Manipulate Image</h2>
       <h3>Crop it</h3>
-      <a href="#" id="crop-image-preview" class="btn btn-primary" role="button">Crop image (300x300)</a>
+      <a href='#' id='crop-image-preview' class='btn btn-primary' role='button'>Crop image (300x300)</a>
       <h3>Try some Filter</h3>
-      <a href="#" id="brightness-image-preview" class="btn btn-primary" role="button">Brightness (-40%)</a>
-      <a href="#" id="contrast-image-preview" class="btn btn-primary" role="button">Contrast (40)</a>
-      <a href="#" id="noise-image-preview" class="btn btn-primary" role="button">Noise (200)</a>
-      <a href="#" id="rgb-image-preview" class="btn btn-primary" role="button">RGB (20,-20,40)</a>
-      <a href="#" id="round-corner-image-preview" class="btn btn-primary" role="button">Rounded Corners</a>
-      <a href="#" id="watermark-image-preview" class="btn btn-primary" role="button">Watermark (Renuo Logo)</a>
-    </div>
-    <div class="col-md-9">
-      <h2>Preview manipulated Image</h2>
-      <div class="image-preview-wrapper">
-        <img id="image-preview">
-      </div>
+      <a href='#' id='brightness-image-preview' class='btn btn-primary' role='button'>Brightness (-40%)</a>
+      <a href='#' id='contrast-image-preview' class='btn btn-primary' role='button'>Contrast (40)</a>
+      <a href='#' id='noise-image-preview' class='btn btn-primary' role='button'>Noise (200)</a>
+      <a href='#' id='rgb-image-preview' class='btn btn-primary' role='button'>RGB (20,-20,40)</a>
+      <a href='#' id='round-corner-image-preview' class='btn btn-primary' role='button'>Rounded Corners</a>
+      <a href='#' id='watermark-image-preview' class='btn btn-primary' role='button'>Watermark (Renuo Logo)</a>
     </div>
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>-->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>-->
-<script src="https://cdn.jsdelivr.net/dropzone/4.3.0/dropzone.min.js" integrity="sha256-p2l8VeL3iL1J0NxcXbEVtoyYSC+VbEbre5KHbzq1fq8=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/renuo-upload/1.1.1/renuo_upload.min.js" integrity="sha256-8gp6ril6gK0/NTblSISG9Rsk4juC94A46bxoh0RwOCM=" crossorigin="anonymous"></script>
+<script src='https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' crossorigin='anonymous'></script>
+<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js' integrity='sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB' crossorigin='anonymous'></script>-->
+<!--<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js' integrity='sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD' crossorigin='anonymous'></script>-->
+<script src='https://cdn.jsdelivr.net/dropzone/4.3.0/dropzone.min.js' integrity='sha256-p2l8VeL3iL1J0NxcXbEVtoyYSC+VbEbre5KHbzq1fq8=' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/renuo-upload/1.1.1/renuo_upload.min.js' integrity='sha256-8gp6ril6gK0/NTblSISG9Rsk4juC94A46bxoh0RwOCM=' crossorigin='anonymous'></script>
 <!-- build:js -->
 <script src='application.js'></script>
 <!-- endbuild -->
