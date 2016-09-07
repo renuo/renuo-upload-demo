@@ -1,3 +1,6 @@
-$preview-image-border: rgba(0, 0, 0, .3);
+$color-light-blue: rgba(74, 146, 197, 0.8);
+$upload-border-color: rgba($color-light-blue, 1);
+$preview-image-border: rgba($color-light-blue, 1);
+$btn-color: #28448A;
 
 @import 'index';

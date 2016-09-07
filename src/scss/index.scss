@@ -1,5 +1,7 @@
+$border-radius: 5px;
+
 .hidden-by-default {
-  display: none;
+  //display: none;
 }
 
 img {
@@ -11,6 +13,17 @@ img {
   margin-top: 100px;
 }
 
+.jumbotron{
+  background-color: rgba($color-light-blue, 0.4);
+  border-radius: 0px;
+}
+
+.dropzone{
+  border-color: $btn-color;
+  border-radius: $border-radius;
+  background-color: rgba($color-light-blue, 0.1);
+}
+
 .result {
   margin-top: 50px;
 
@@ -20,7 +33,7 @@ img {
   }
 
   h3 {
-    margin: 20px 0 10px;
+    margin: 10px 0 10px;
   }
 
   a + a {
@@ -31,8 +44,28 @@ img {
     width: 100%;
   }
 
-  .image-preview-wrapper {
-    border: 2px solid $preview-image-border;
+  .btn-primary{
+    background-color: $btn-color;
+    border-color: rgba($color-light-blue, 0.4);
+
+    &:hover{
+      background-color: rgba($color-light-blue, 0.4);
+      color: black;
+    }
+  }
+
+  .manipulate-menu{
+    border: 2px solid $btn-color;
+    border-radius: $border-radius;
+    text-align: center;
+    padding: 15px;
     min-height: 420px;
+  }
+
+  .image-preview-wrapper {
+    border: 2px solid $btn-color;
+    border-radius: $border-radius;
+    min-height: 420px;
+    height: inherit;
   }
 }
