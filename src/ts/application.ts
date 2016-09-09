@@ -10,7 +10,7 @@ $(() => {
 
 window.scroll = function () {
   $('html, body').animate({
-    'scrollTop': $('#logo').offset().top
+    'scrollTop': $('#top').offset().top
   }, 1000);
 };
 
