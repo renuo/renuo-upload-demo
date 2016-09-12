@@ -21,8 +21,8 @@ class RenuoUploadInitializer {
       imagePreview.data('src', imagePublicUrl);
 
       $('.result').show();
-      $('.container_info').show();
-      $('.container_info-top').show();
+      $('.container-info').show();
+      $('.container-info-top').show();
       $('html, body').animate({
         'scrollTop': $('#info').offset().top
       }, 1000);
