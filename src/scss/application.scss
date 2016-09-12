@@ -1,3 +1,7 @@
-$preview-image-border: rgba(0, 0, 0, .3);
+$color-light-blue: rgba(74, 146, 197, 0.8);
+$color-light-blue2: rgba($color-light-blue, 0.1);
+$upload-border-color: rgba($color-light-blue, 1);
+$preview-image-border: rgba($color-light-blue, 1);
+$darkblue-color: #28448A;
 
 @import 'index';
