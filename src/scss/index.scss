@@ -115,6 +115,35 @@ img {
   }
 }
 
+@mixin btn-colors($color){
+  background-color: $color;
+  border-color: $color;
+}
+
+.btn-primary{
+  @include btn-colors($background-color2);
+
+  &.active{
+    @include btn-colors($background-color);
+
+    &:hover{
+      @include btn-colors(#025aa5);
+    }
+
+    &:focus{
+      @include btn-colors($background-color);
+    }
+  }
+
+  &:hover{
+    @include btn-colors(#025aa5);
+  }
+
+  &:focus{
+    @include btn-colors($background-color2);
+  }
+}
+
 .result {
   margin-top: 50px;
 
