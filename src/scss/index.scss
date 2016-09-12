@@ -2,18 +2,20 @@
   display: none;
 }
 
+body {
+  background-color: #DDDDDD;
+  color: #202020;
+  font-variant: small-caps;
+  width: 100vw;
+}
+
 img {
   max-width: 100%;
 }
 
-.container {
-  margin-bottom: 100px;
-  margin-top: 100px;
-}
-
 .result {
   margin-top: 50px;
-
+  width: 100%;
 
   h2 {
     margin-bottom: 20px;
@@ -28,11 +30,61 @@ img {
   }
 
   .btn {
-    width: 100%;
+    display: inline-block;
+    background-color: #00bfff;
+  }
+
+  .btn:hover {
+    background-color: #0000ff;
   }
 
   .image-preview-wrapper {
-    border: 2px solid $preview-image-border;
+    background-color: #ffffff;
+    border-radius: 20px;
     min-height: 420px;
+    width: 100%;
   }
+}
+
+.dropzone {
+  background-color: rgba(256, 256, 256, 1);
+  border-radius: 5px;
+  color: #000000;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  min-height: 95vh;
+  padding: 25px;
+  padding-top: 0;
+}
+
+.page-header {
+  letter-spacing: 2px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 72px;
+}
+
+.page-text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 48px;
+}
+
+.center-filter-buttons {
+  text-align: center;
+}
+
+.center-filter-buttons ul.nav-pills {
+  display: inline-block;
+}
+
+.center-filter-buttons li {
+  display: inline;
+}
+
+.center-filter-buttons a {
+  float: left;
 }
