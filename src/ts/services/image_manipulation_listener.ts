@@ -1,7 +1,7 @@
 /// <reference path="../models/image_manipulations_options.ts"/>
 
 class ImageManipulationListener {
-  private options:ImageManipulationsOptions;
+  private options: ImageManipulationsOptions;
 
   constructor() {
     this.options = new ImageManipulationsOptions();
@@ -25,13 +25,13 @@ class ImageManipulationListener {
       ));
   }
 
-  toggleActive(element:HTMLLinkElement):boolean {
+  toggleActive(element: HTMLLinkElement): boolean {
     let jQueryElement = $(element);
     jQueryElement.toggleClass('active');
     return jQueryElement.hasClass('active');
   }
 
-  manipulateImage():void {
+  manipulateImage(): void {
     const image = $('#image-preview');
     const imageOptions = this.options.join();
 
@@ -43,8 +43,8 @@ class ImageManipulationListener {
     }
   }
 
-  clickFilterCallback = (key:string, value:string):Function => {
-    const callback = (event:JQueryEventObject) => {
+  clickFilterCallback = (key: string, value: string): Function => {
+    const callback = (event: JQueryEventObject) => {
       event.preventDefault();
       if (this.toggleActive(<HTMLLinkElement> event.target)) {
         this.options.setFilter(key, value);

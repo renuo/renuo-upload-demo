@@ -4,7 +4,7 @@ $border-radius: 12px;
   display: none;
 }
 
-body{
+body {
   background-color: rgba($color-light-blue, 0.35);
 }
 
@@ -16,7 +16,7 @@ img {
   max-width: 100%;
 }
 
-.logo{
+.logo {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -26,24 +26,21 @@ img {
   margin-top: 70px;
 }
 
-.jumbotron{
-  //background-color: $color-light-blue2;
+.jumbotron {
   border-radius: 0;
   background-color: $darkblue-color;
   color: rgb(230, 237, 242);
-  box-shadow: 2px 5px 5px $darkblue-color;
-  //border-bottom: solid black 1px;
+  //box-shadow: 2px 5px 5px $darkblue-color;
+  border-bottom: solid black 1px;
 }
 
-.dropzone{
+.dropzone {
   padding: 10px;
-  border-color: $darkblue-color;
+  border: solid 2px $darkblue-color;
   border-radius: $border-radius;
-  box-shadow: inset 1px 1px 15px $darkblue-color;
   background-color: white;
 
-
-  &:hover{
+  &:hover {
     background-color: rgba(230, 237, 242, 0.49);
   }
 }
@@ -61,26 +58,24 @@ img {
 
   .btn {
     width: 100%;
-    //box-shadow: 1px 1px 5px $darkblue-color;
   }
 
-  .btn-primary{
+  .btn-primary {
     background-color: $darkblue-color;
     border: solid black 1px;
 
-    &.active{
+    &.active {
       background-color: darkblue;
     }
 
-    &:hover{
+    &:hover {
       background-color: $color-light-blue2;
       border-color: $darkblue-color;
       color: black;
     }
   }
 
-
-  .manipulate-menu{
+  .manipulate-menu {
     background-color: white;
     border: 1px solid $darkblue-color;
     border-radius: $border-radius;
@@ -90,7 +85,6 @@ img {
   }
 
   .image-preview-wrapper {
-    box-shadow: inset 1px 1px 15px $darkblue-color;
     background-color: white;
     border: 2px solid $darkblue-color;
     border-radius: $border-radius;
