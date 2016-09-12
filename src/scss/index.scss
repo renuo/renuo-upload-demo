@@ -1,6 +1,6 @@
 body {
   font-family: 'Comfortaa', cursive;
-  background-color: #4B93C2;
+  background-color: $background-color;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
   float: right;
   pointer-events: none;
   width: 80px;
-  margin-top: -20px;
+  margin-top: -30px;
   margin-right: -20px;
 }
 
@@ -39,7 +39,7 @@ img {
 }
 
 .container_upload {
-  background-color: #4B93C2;
+  background-color: $background-color;
   color: #FFFFFF;
   margin: auto;
   width: 100vw;
@@ -49,6 +49,7 @@ img {
   .upload_button {
     border-radius: 40px;
     border: none;
+    padding-top: 30px;
   }
   @media(max-width: 580px) {
     .col-xs-12 {
@@ -66,7 +67,6 @@ img {
 
 .info-text {
   color: #000000;
-  //margin-top: 40px !important;
 }
 
 .container_info-top,
