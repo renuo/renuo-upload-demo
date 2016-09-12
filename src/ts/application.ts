@@ -7,3 +7,14 @@ $(() => {
   new ImageManipulationListener();
 });
 
+$(document).ready(function () {
+  window.scroll = function () {
+    $('html, body').animate({
+      'scrollTop': $('#top').offset().top
+    }, 1000);
+  };
+
+  $('.renuo-upload').hover(function () {
+    $('.info-text').removeClass('infinite');
+  });
+});
