@@ -1,6 +1,6 @@
 body {
-  font-family: $font-family;
   background-color: $background-color;
+  font-family: $font-family;
 }
 
 h1 {
@@ -9,25 +9,24 @@ h1 {
 
 @media(max-width: 1000px) {
   h1 {
-    max-width: 600px;
     margin: auto;
+    max-width: 600px;
   }
 }
 
 .pagetop {
+  left: 0;
   pointer-events: none;
   position: absolute;
-
   top: 0;
-  left: 0;
 }
 
 .renuo-o {
   float: right;
+  margin-right: -20px;
+  margin-top: -30px;
   pointer-events: none;
   width: 80px;
-  margin-top: -30px;
-  margin-right: -20px;
 }
 
 .hidden-by-default {
@@ -38,25 +37,26 @@ img {
   max-width: 100%;
 }
 
-.container_upload {
+.container-upload {
   background-color: $background-color;
   color: $background-upload-box;
-  margin: auto;
-  width: 100vw;
   height: 65vh;
+  margin: auto;
   margin-top: 30vh;
+  width: 100vw;
 
-  .upload_button {
+  .upload-button {
+    border: 0;
     border-radius: 40px;
-    border: none;
     padding-top: 30px;
   }
   @media(max-width: 580px) {
     .col-xs-12 {
       padding: 0;
     }
-    .upload_button {
-      border-radius: 0px;
+
+    .upload-button {
+      border-radius: 0;
     }
   }
 }
@@ -69,42 +69,47 @@ img {
   color: $font-color-upload-box;
 }
 
-.container_info-top,
-.container_info {
+.container-info-top,
+.container-info {
   background-color: $background-details-box;
 }
-.container_info-top {
-  padding-top: 5vh;
+
+.container-info-top {
   height: 5vh;
+  padding-top: 5vh;
 }
 
-.container_info {
-  padding-bottom: 30px;
+.container-info {
   margin: auto;
-  h1,h2,h3 {
+  min-height: 90vh;
+  padding-bottom: 30px;
+
+  h1,
+  h2,
+  h3 {
     color: $font-color-upload-box;
   }
-  min-height: 90vh;
 
   .back {
-    font-size: 50px;
     border-radius: 50px;
-    padding: 20px 30px 0px 30px;
+    font-size: 50px;
     margin-top: 3px;
+    padding: 20px 30px 0;
   }
 }
 
 .footer-top {
-  padding-top: 5vh;
   background-color: $background-footer;
   min-height: 5vh;
+  padding-top: 5vh;
 }
 
 .footer {
-  margin: auto;
   background-color: $background-footer;
   color: $font-color-footer;
+  margin: auto;
   min-height: 20vh;
+
   p {
     font-family: 'Noto Serif', serif;
   }
