@@ -1,6 +1,7 @@
 /// <reference path="../../../typings/all.d.ts" />
 
-interface IShowResult { (result: IRenuoUploadResult): void; }
+interface IShowResult { (result: IRenuoUploadResult): void;
+}
 
 class RenuoUploadInitializer {
   constructor() {
@@ -20,6 +21,11 @@ class RenuoUploadInitializer {
       imagePreview.data('src', imagePublicUrl);
 
       $('.result').show();
+      $('.container_info').show();
+      $('.container_info-top').show();
+      $('html, body').animate({
+        'scrollTop': $('#info').offset().top
+      }, 1000);
     };
 
     new RenuoUpload($('.renuo-upload'), dropzoneOptions, showResult);
