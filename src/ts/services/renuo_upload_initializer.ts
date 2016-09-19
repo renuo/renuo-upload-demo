@@ -25,7 +25,6 @@ class RenuoUploadInitializer {
       $('.container-info-top').show();
 
       setTimeout(()=>{
-
       $('html, body').animate({
         'scrollTop': $('#info').offset().top
       }, 1000);
