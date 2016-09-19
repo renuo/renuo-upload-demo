@@ -23,10 +23,15 @@ class RenuoUploadInitializer {
       $('.result').show();
       $('.container-info').show();
       $('.container-info-top').show();
+
+      setTimeout(()=>{
+
       $('html, body').animate({
         'scrollTop': $('#info').offset().top
       }, 1000);
+      }, 1000);
     };
+
 
     new RenuoUpload($('.renuo-upload'), dropzoneOptions, showResult);
   }
