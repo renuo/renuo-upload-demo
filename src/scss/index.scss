@@ -67,6 +67,9 @@ img {
 
 .info-text {
   color: $font-color-upload-box;
+
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
 }
 
 .container-info-top,
@@ -109,10 +112,6 @@ img {
   color: $font-color-footer;
   margin: auto;
   min-height: 20vh;
-
-  p {
-    font-family: 'Noto Serif', serif;
-  }
 }
 
 @mixin btn-colors($color){
