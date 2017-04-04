@@ -1,6 +1,6 @@
 # Renuo Upload & Image Managing Example
 
-## Demo is online available: [renuo.github.io/renuo-upload-demo](https://renuo.github.io/renuo-upload-demo).
+<https://renuo.github.io/renuo-upload-demo>
 
 # Development
 
